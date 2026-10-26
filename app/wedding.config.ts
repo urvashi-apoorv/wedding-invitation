@@ -112,7 +112,8 @@ export const weddingConfig = {
   site: {
     // Change this if the GitHub organization or repository name changes.
     url: "https://urvashi-apoorv.github.io/wedding-invitation/",
-    socialPreviewImage: "og-v3.png",
+    socialPreviewImage: "og-v4.jpg",
+    socialPreviewType: "image/jpeg",
     socialPreviewAlt: "Urvashi and Apoorv wedding invitation",
   },
 

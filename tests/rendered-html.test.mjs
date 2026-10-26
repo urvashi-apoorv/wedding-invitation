@@ -22,8 +22,9 @@ test("server-renders the active wedding invitation", async () => {
   const html = await response.text();
   assert.match(html, /Wedding Invitation/);
   assert.match(html, /property="og:image"/);
-  assert.match(html, /https:\/\/urvashi-apoorv\.github\.io\/wedding-invitation\/og-v3\.png/);
-  assert.match(html, /property="og:image:type" content="image\/png"/);
+  assert.match(html, /https:\/\/urvashi-apoorv\.github\.io\/wedding-invitation\/og-v4\.jpg/);
+  assert.match(html, /property="og:image:type" content="image\/jpeg"/);
+  assert.match(html, /rel="image_src"/);
   assert.match(html, /property="og:image:width" content="1200"/);
   assert.match(html, /property="og:image:height" content="630"/);
   assert.match(html, /class="film-site"/);

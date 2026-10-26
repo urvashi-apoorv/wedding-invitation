@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     images: [{
       url: socialPreviewImageUrl,
       secureUrl: socialPreviewImageUrl,
-      type: "image/png",
+      type: weddingConfig.site.socialPreviewType,
       width: 1200,
       height: 630,
       alt: weddingConfig.site.socialPreviewAlt,
@@ -42,5 +42,10 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+  return (
+    <html lang="en">
+      <head><link rel="image_src" href={socialPreviewImageUrl} /></head>
+      <body>{children}</body>
+    </html>
+  );
 }
