@@ -108,6 +108,14 @@ export const weddingConfig = {
     },
   },
 
+  // WEBSITE ADDRESS AND WHATSAPP / SOCIAL LINK PREVIEW
+  site: {
+    // Change this if the GitHub organization or repository name changes.
+    url: "https://urvashi-apoorv.github.io/wedding-invitation/",
+    socialPreviewImage: "og.png",
+    socialPreviewAlt: "Urvashi and Apoorv wedding invitation",
+  },
+
   // IMAGE FILES
   branding: {
     omLogo: "branding/om-logo-transparent.png",

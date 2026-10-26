@@ -21,6 +21,10 @@ test("server-renders the active wedding invitation", async () => {
 
   const html = await response.text();
   assert.match(html, /Wedding Invitation/);
+  assert.match(html, /property="og:image"/);
+  assert.match(html, /https:\/\/urvashi-apoorv\.github\.io\/wedding-invitation\/og\.png/);
+  assert.match(html, /property="og:image:width" content="1200"/);
+  assert.match(html, /property="og:image:height" content="630"/);
   assert.match(html, /class="film-site"/);
   assert.match(html, /With Love &amp; Blessings/i);
   assert.match(html, /Wedding Location/i);
@@ -45,6 +49,8 @@ test("keeps personalisation in one configuration file", async () => {
   assert.match(config, /presentation:/);
   assert.match(config, /photos:/);
   assert.match(config, /music:/);
+  assert.match(config, /WEBSITE ADDRESS AND WHATSAPP \/ SOCIAL LINK PREVIEW/);
+  assert.match(config, /socialPreviewImage:/);
 
   const entryPoint = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
   assert.match(entryPoint, /AamantranWeddingInvitation/);

@@ -2,24 +2,35 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { weddingConfig } from "./wedding.config";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3001";
+const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? weddingConfig.site.url;
+const siteUrl = configuredSiteUrl.endsWith("/") ? configuredSiteUrl : `${configuredSiteUrl}/`;
+const socialPreviewImageUrl = new URL(weddingConfig.site.socialPreviewImage, siteUrl).toString();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: `${weddingConfig.pages.page2.brideName} & ${weddingConfig.pages.page2.groomName} — Wedding Invitation`,
   description: `You are invited to celebrate the wedding of ${weddingConfig.pages.page2.brideName} and ${weddingConfig.pages.page2.groomName} in ${weddingConfig.pages.page3.city}.`,
+  alternates: { canonical: siteUrl },
   icons: { icon: "./branding/wax-seal-cutout.png" },
   openGraph: {
     title: `${weddingConfig.pages.page2.brideName} & ${weddingConfig.pages.page2.groomName} — Wedding Invitation`,
     description: `${weddingConfig.pages.page3.displayDate} · ${weddingConfig.pages.page3.city}`,
     type: "website",
-    images: [{ url: "og.png", width: 1792, height: 939, alt: "Indian wedding invitation" }],
+    url: siteUrl,
+    siteName: `${weddingConfig.pages.page2.brideName} & ${weddingConfig.pages.page2.groomName}`,
+    locale: "en_IN",
+    images: [{
+      url: socialPreviewImageUrl,
+      width: 1200,
+      height: 630,
+      alt: weddingConfig.site.socialPreviewAlt,
+    }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${weddingConfig.pages.page2.brideName} & ${weddingConfig.pages.page2.groomName}`,
     description: `${weddingConfig.pages.page3.displayDate} · ${weddingConfig.pages.page3.city}`,
-    images: ["og.png"],
+    images: [socialPreviewImageUrl],
   },
 };
 
