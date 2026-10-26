@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 @font-face { font-family: "Cormorant Garamond"; src: url("./fonts/cormorant-garamond-latin.woff2") format("woff2"); font-style: normal; font-weight: 400 600; font-display: block; }
 @font-face { font-family: "Cormorant Garamond"; src: url("./fonts/cormorant-garamond-italic-latin.woff2") format("woff2"); font-style: italic; font-weight: 400 500; font-display: block; }
 @font-face { font-family: "Great Vibes"; src: url("./fonts/great-vibes-latin.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: block; }
@@ -7,16 +5,9 @@
 @font-face { font-family: "Manrope"; src: url("./fonts/manrope-latin.woff2") format("woff2"); font-style: normal; font-weight: 400 600; font-display: block; }
 
 :root {
-  --wine: #4b0719;
-  --wine-dark: #24020b;
-  --wine-soft: #771c34;
-  --gold: #c7a35a;
   --gold-bright: #e8cd88;
-  --ivory: #f8f0df;
   --cream: #fffaf0;
   --ink: #241a17;
-  --muted: #796862;
-  --green: #173a31;
   --serif: "Cormorant Garamond", Georgia, serif;
   --display: "Italiana", Georgia, serif;
   --sans: "Manrope", Arial, sans-serif;
@@ -39,7 +30,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   --film-hero-text: #4d1728;
   --film-ivory: #fff9f0;
   --film-ink: #402d2b;
-  --film-gold: #b58b60;
   --film-script: "Great Vibes", cursive;
   min-height: 100vh;
   overflow-x: clip;
@@ -135,23 +125,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .film-begins { padding: 88px clamp(24px, 8vw, 76px) 95px; text-align: center; background-color: #f7eee5; }
 .film-hands { position: relative; width: min(560px, 100%); height: auto; margin: 0 auto 28px; color: var(--film-rose-dark); }
 .film-hands > img { display: block; width: 100%; height: auto; object-fit: contain; }
-.film-hand { position: absolute; top: 72px; width: 55%; height: 76px; border-bottom: 1px solid currentColor; border-radius: 0 0 60% 45%; }
-.film-hand::before, .film-hand::after { content: ""; position: absolute; height: 1px; background: currentColor; transform-origin: left center; }
-.film-hand::before { width: 105px; top: 4px; }
-.film-hand::after { width: 82px; top: 25px; }
-.film-hand i { position: absolute; top: 39px; width: 98px; height: 37px; border-top: 1px solid currentColor; border-radius: 50%; }
-.film-hand b { position: absolute; top: 29px; color: var(--film-rose-dark); font-size: 17px; font-weight: 400; }
-.film-hand--left { left: -6%; transform: rotate(18deg); }
-.film-hand--left::before { left: -42px; transform: rotate(11deg); }
-.film-hand--left::after { left: -27px; transform: rotate(-8deg); }
-.film-hand--left i { right: -11px; transform: rotate(7deg); }
-.film-hand--left b { right: 20px; }
-.film-hand--right { right: -6%; transform: scaleX(-1) rotate(18deg); }
-.film-hand--right::before { left: -42px; transform: rotate(11deg); }
-.film-hand--right::after { left: -27px; transform: rotate(-8deg); }
-.film-hand--right i { right: -11px; transform: rotate(7deg); }
-.film-hand--right b { right: 20px; }
-.film-hands > span { position: absolute; left: 50%; top: 118px; transform: translateX(-50%); font-size: 25px; }
 .film-begins__copy { max-width: 610px; margin: auto; }
 .film-begins__copy h2, .film-countdown-wrap h3, .film-script-heading h2, .film-location h2 { margin: 0; color: var(--film-rose-dark); font: 400 56px/1 var(--film-script); }
 .film-begins__copy > strong { display: block; margin: 10px 0 33px; color: var(--film-rose-dark); font: 400 40px/1.15 var(--film-script); }
@@ -187,10 +160,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .film-event__date span { font-size: clamp(17px, 4vw, 22px); }
 .film-event__date b { color: rgba(113, 53, 66, .35); font-family: var(--display); }
 .film-timeline article > p { margin: 12px 0 0; color: #5f4944; font-size: 16px; }
-.film-event__detail { overflow: hidden; margin-top: 14px; color: #5f4944; font-size: 15px; line-height: 1.45; }
-.film-event__detail em { color: var(--film-rose-dark); }
-.film-event__actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 22px; }
-.film-event__actions a, .film-event__actions button { display: flex; align-items: center; justify-content: center; gap: 6px; min-width: 0; padding: 13px 8px; border: 0; border-radius: 999px; background: var(--film-rose); color: white; text-decoration: none; font: 500 13px var(--serif); cursor: pointer; }
 
 .film-location { min-height: 780px; padding: 30px; background-color: var(--film-rose); background-image: linear-gradient(rgba(169,105,119,.88), rgba(169,105,119,.88)), url("./textures/crumpled-paper.png"); background-position: center; background-size: auto, 100% auto; background-blend-mode: normal, multiply; color: #fff9ef; }
 .film-location .film-vine--left, .film-location .film-vine--right { display: none; }
@@ -276,7 +245,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .film-promise__content h2 { font-size: 55px; }
   .film-events { padding-inline: 20px; }
   .film-timeline article { padding-left: 46px; }
-  .film-event__actions a, .film-event__actions button { font-size: 11px; }
   .film-location { padding: 20px; }
   .film-location > .film-ornate-frame { min-height: 680px; padding: 102px 28px 88px; }
   .film-location h2 { font-size: clamp(36px, 9.5vw, 42px); white-space: nowrap; }

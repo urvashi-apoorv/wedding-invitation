@@ -102,7 +102,7 @@ export const weddingConfig = {
       contacts: [
         { name: "Sunita Agrawal", phone: "+91 9977154039" },
         { name: "Vishal Agrawal", phone: "+91 7741038493" },
-        { name: "Disha Saxena", phone: "+91 7350861076" },
+        { name: "Disha Saxena Agrawal", phone: "+91 7350861076" },
       ],
       footerMessage: "Made with love for our forever",
     },
@@ -156,7 +156,6 @@ export const weddingConfig = {
       wine: "#642637",
       wineSoft: "#a96977",
       heroText: "#4d1728",
-      gold: "#b38a52",
       cream: "#fffaf0",
       ink: "#1c1412",
     },

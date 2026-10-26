@@ -1,5 +1,7 @@
 "use client";
 
+/* eslint-disable @next/next/no-img-element -- Configurable assets are served directly by GitHub Pages. */
+
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import {
   ChevronDown,
@@ -143,7 +145,6 @@ export function AamantranWeddingInvitation() {
     "--film-hero-text": config.theme.colors.heroText,
     "--film-ivory": config.theme.colors.cream,
     "--film-ink": config.theme.colors.ink,
-    "--film-gold": config.theme.colors.gold,
   } as CSSProperties;
 
   const stopMusic = () => {

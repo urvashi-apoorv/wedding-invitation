@@ -1,14 +1,13 @@
-# Wedding photos
+# Optional landing photo
 
-Place your wedding images in this folder, then update `app/wedding.config.ts`.
+The current landing page uses the paper design. To use a couple photograph instead:
 
-Example:
+1. Add the image to this folder, for example `couple.jpg`.
+2. Set `presentation.heroMode` to `"photo"` in `app/wedding.config.ts`.
+3. Set `photos.hero` to the image path:
 
 ```ts
-hero: "photos/hero.jpg",
-story: "photos/story.jpg",
+photos: {
+  hero: "photos/couple.jpg",
+},
 ```
-
-Add or remove gallery entries in the same configuration file. The `position`
-value controls the crop, for example `"center center"`, `"center top"`, or
-`"35% 60%"`.
