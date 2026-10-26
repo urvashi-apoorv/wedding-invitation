@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     locale: "en_IN",
     images: [{
       url: socialPreviewImageUrl,
+      secureUrl: socialPreviewImageUrl,
+      type: "image/png",
       width: 1200,
       height: 630,
       alt: weddingConfig.site.socialPreviewAlt,

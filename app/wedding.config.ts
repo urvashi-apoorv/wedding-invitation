@@ -22,7 +22,7 @@ export const weddingConfig = {
       brideName: "Urvashi",
       groomName: "Apoorv",
       welcomeText: "We are honoured to welcome you to the wedding ceremony of",
-      hashtag: "#ApUrvi",
+      hashtag: "#UrvashiGotHerApoorv",
       scrollLabel: "Scroll",
     },
 
@@ -112,7 +112,7 @@ export const weddingConfig = {
   site: {
     // Change this if the GitHub organization or repository name changes.
     url: "https://urvashi-apoorv.github.io/wedding-invitation/",
-    socialPreviewImage: "og.png",
+    socialPreviewImage: "og-v3.png",
     socialPreviewAlt: "Urvashi and Apoorv wedding invitation",
   },
 
