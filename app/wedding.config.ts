@@ -100,7 +100,7 @@ export const weddingConfig = {
       freeText: "Bua meri Dulhan bani, khushiyon ki bahar chali. Mai nanhi Vamika kahu, shadi me jarur ana sabhi !!",
       deadline: "",
       whatsappGroupLabel: "Join the Wedding Group",
-      whatsappGroupUrl: "https://chat.whatsapp.com/DRyONMADTcXEgmmJXeam6u",
+      whatsappGroupUrl: "https://chat.whatsapp.com/CCX2k1PzSTCKmvSGNBvRdn",
       footerMessage: "Made with love for our forever",
     },
   },
