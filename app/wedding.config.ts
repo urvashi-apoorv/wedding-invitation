@@ -92,18 +92,15 @@ export const weddingConfig = {
       mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.028593621224!2d82.18775137591575!3d22.08672495060173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a280aed9efe8227%3A0xc0c686a9406869a2!2sHari%20Amrit!5e0!3m2!1sen!2suk!4v1792583597702!5m2!1sen!2suk",
     },
 
-    // PAGE 7 — CONTACT CARD AND FINAL MESSAGE
+    // PAGE 7 — WHATSAPP GROUP INVITE AND FINAL MESSAGE
     page7: {
       loveLinePrefix: "With Love",
-      heading: "CONTACT",
+      heading: "JOIN OUR WHATSAPP GROUP",
       hostName: "The Agrawal Family",
       freeText: "Bua meri Dulhan bani, khushiyon ki bahar chali. Mai nanhi Vamika kahu, shadi me jarur ana sabhi !!",
       deadline: "",
-      contacts: [
-        { name: "Sunita Agrawal", phone: "+91 9977154039" },
-        { name: "Vishal Agrawal", phone: "+91 7741038493" },
-        { name: "Disha Saxena Agrawal", phone: "+91 7350861076" },
-      ],
+      whatsappGroupLabel: "Join the Wedding Group",
+      whatsappGroupUrl: "https://chat.whatsapp.com/DRyONMADTcXEgmmJXeam6u",
       footerMessage: "Made with love for our forever",
     },
   },

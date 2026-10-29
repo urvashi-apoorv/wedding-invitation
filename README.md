@@ -1,6 +1,6 @@
 # Urvashi & Apoorv — Wedding Invitation
 
-A mobile-friendly React wedding invitation with a sealed-envelope welcome, countdown, music, rose-petal animation, event itinerary, Google Maps, contact card and WhatsApp link preview.
+A mobile-friendly React wedding invitation with a sealed-envelope welcome, countdown, music, rose-petal animation, event itinerary, Google Maps, WhatsApp group invitation and link preview.
 
 The project contains one focused rose-envelope design organised as seven editable pages. It is statically exported and hosted free with GitHub Pages.
 
@@ -10,7 +10,7 @@ Edit `app/wedding.config.ts`. The text is grouped as **Page 1** through **Page 7
 
 Put an optional couple photo in `public/photos/` and music in `public/music/`, then update their paths in the configuration.
 
-The same configuration controls the envelope animation timing, paper/photo landing style, Google Map, contact details and whether music starts when the invitation is opened.
+The same configuration controls the envelope animation timing, paper/photo landing style, Google Map, WhatsApp group invite and whether music starts when the invitation is opened.
 
 ## Preview
 

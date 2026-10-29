@@ -419,9 +419,9 @@ export function AamantranWeddingInvitation() {
               <img className="film-rsvp__monogram" src={config.branding.initialsLogo} alt={`${config.pages.page2.brideName} and ${config.pages.page2.groomName} monogram`} />
               <span>{config.pages.page7.loveLinePrefix}, {config.pages.page7.hostName}</span>
               <h2>{config.pages.page7.heading}</h2>
-              {config.pages.page7.contacts.map((contact) => (
-                <p key={contact.name}><b>{contact.name}</b><a href={`tel:${contact.phone.replace(/\s/g, "")}`}>{contact.phone}</a></p>
-              ))}
+              <a className="film-rsvp__group-link" href={config.pages.page7.whatsappGroupUrl} target="_blank" rel="noreferrer">
+                {config.pages.page7.whatsappGroupLabel} <ExternalLink size={14} />
+              </a>
               <div className="film-rsvp__free-text">{config.pages.page7.freeText}</div>
               <small>{config.pages.page7.deadline}</small>
             </Reveal>

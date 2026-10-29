@@ -30,8 +30,9 @@ test("server-renders the active wedding invitation", async () => {
   assert.match(html, /class="film-site"/);
   assert.match(html, /With Love &amp; Blessings/i);
   assert.match(html, /Wedding Location/i);
+  assert.match(html, /Join the Wedding Group/i);
+  assert.match(html, /https:\/\/chat\.whatsapp\.com\/DRyONMADTcXEgmmJXeam6u/);
   assert.match(html, /Click to open/i);
-  assert.doesNotMatch(html, /film-rsvp__whatsapp/i);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
 
@@ -40,7 +41,7 @@ test("keeps personalisation in one configuration file", async () => {
   assert.match(config, /PERSONALISE YOUR INVITATION HERE/);
   assert.match(config, /PAGE-BY-PAGE CONTENT/);
   assert.match(config, /PAGE 1 — CLOSED ENVELOPE/);
-  assert.match(config, /PAGE 7 — CONTACT CARD/);
+  assert.match(config, /PAGE 7 — WHATSAPP GROUP INVITE/);
   assert.match(config, /pages:/);
   assert.match(config, /blessingLine:/);
   assert.match(config, /familyLine:/);
